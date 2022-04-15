@@ -1239,6 +1239,9 @@ textarea.input {
   text-transform: uppercase;
   padding-right: 2rem;
   position: relative;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .no-webp .registration__link::after{
@@ -1849,6 +1852,10 @@ textarea.input {
 
   .tags-info-posts__title:hover {
     color: #4cb649;
+  }
+
+  .registration__link:hover {
+    color: #11540e;
   }
 
   .card-registration:hover {
