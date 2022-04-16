@@ -170,6 +170,9 @@ textarea.input {
   line-height: 1.4166666667;
   font-weight: 300;
   cursor: pointer;
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
 }
 
 .button {
@@ -1552,6 +1555,17 @@ textarea.input {
 }
 
 @media (max-width: 61.99875em) {
+  .title:active {
+    color: #4cb649;
+  }
+
+  .button:active {
+    background: -webkit-gradient(linear, left bottom, left top, from(#4cb649), to(#5ddf5a));
+    background: -o-linear-gradient(bottom, #4cb649 0%, #5ddf5a 100%);
+    background: linear-gradient(to top, #4cb649 0%, #5ddf5a 100%);
+    color: #ffffff;
+  }
+
   .main-header__logo {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
