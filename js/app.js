@@ -164,6 +164,12 @@
     };
     const da = new DynamicAdapt("max");
     da.init();
+    document.addEventListener("click", documentActions);
+    document.querySelector(".info-header__close");
+    function documentActions(e) {
+        const targetElement = e.target;
+        if (targetElement.classList.contains("info-header__close")) document.querySelector(".info-header").classList.add("_active");
+    }
     window["FLS"] = true;
     isWebp();
     menuInit();
